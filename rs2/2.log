@@ -1,0 +1,562 @@
+2023-03-14T10:29:00.460+0100 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2023-03-14T10:29:00.997+0100 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2023-03-14T10:29:00.998+0100 I  CONTROL  [initandlisten] MongoDB starting : pid=13972 port=27019 dbpath=\data\rs2 64-bit host=DESKTOP-BMALQ1T
+2023-03-14T10:29:00.999+0100 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2023-03-14T10:29:00.999+0100 I  CONTROL  [initandlisten] db version v4.2.24
+2023-03-14T10:29:00.999+0100 I  CONTROL  [initandlisten] git version: 5e4ec1d24431fcdd28b579a024c5c801b8cde4e2
+2023-03-14T10:29:01.000+0100 I  CONTROL  [initandlisten] allocator: tcmalloc
+2023-03-14T10:29:01.000+0100 I  CONTROL  [initandlisten] modules: none
+2023-03-14T10:29:01.000+0100 I  CONTROL  [initandlisten] build environment:
+2023-03-14T10:29:01.000+0100 I  CONTROL  [initandlisten]     distmod: 2012plus
+2023-03-14T10:29:01.001+0100 I  CONTROL  [initandlisten]     distarch: x86_64
+2023-03-14T10:29:01.001+0100 I  CONTROL  [initandlisten]     target_arch: x86_64
+2023-03-14T10:29:01.001+0100 I  CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { replSet: "myRepl" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "\data\rs2" }, systemLog: { destination: "file", path: "\data\rs2\2.log" } }
+2023-03-14T10:29:01.004+0100 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3521M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2023-03-14T10:29:01.270+0100 I  STORAGE  [initandlisten] WiredTiger message [1678786141:270312][13972:140715784624944], txn-recover: Set global recovery timestamp: (0, 0)
+2023-03-14T10:29:01.528+0100 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2023-03-14T10:29:01.703+0100 I  STORAGE  [initandlisten] Timestamp monitor starting
+2023-03-14T10:29:01.761+0100 I  CONTROL  [initandlisten] 
+2023-03-14T10:29:01.761+0100 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-03-14T10:29:01.761+0100 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-03-14T10:29:01.762+0100 I  CONTROL  [initandlisten] 
+2023-03-14T10:29:01.762+0100 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2023-03-14T10:29:01.762+0100 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2023-03-14T10:29:01.762+0100 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2023-03-14T10:29:01.763+0100 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2023-03-14T10:29:01.763+0100 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2023-03-14T10:29:01.763+0100 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2023-03-14T10:29:01.764+0100 I  CONTROL  [initandlisten] 
+2023-03-14T10:29:01.766+0100 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2023-03-14T10:29:01.767+0100 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: db65c90f-b35b-40db-9391-bfe773a5faef and options: { capped: true, size: 10485760 }
+2023-03-14T10:29:01.970+0100 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2023-03-14T10:29:02.553+0100 W  FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'L’objet spécifié n’a pas été trouvé sur l’ordinateur.' for counter '\Processor(_Total)\% Idle Time'
+2023-03-14T10:29:02.553+0100 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/rs2/diagnostic.data'
+2023-03-14T10:29:02.556+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: ReadConcernMajorityNotAvailableYet: could not get updated shard list from config server :: caused by :: Read concern majority reads are currently not possible.; will retry after 30s
+2023-03-14T10:29:02.556+0100 I  SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2023-03-14T10:29:02.557+0100 I  STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: f1ee5f39-4756-4522-9f5a-dea366d710ed and options: {}
+2023-03-14T10:29:02.681+0100 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.oplogTruncateAfterPoint
+2023-03-14T10:29:02.681+0100 I  STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: 9c45620c-3e47-40f6-8871-9df1511c7be9 and options: {}
+2023-03-14T10:29:02.802+0100 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.minvalid
+2023-03-14T10:29:02.803+0100 I  STORAGE  [initandlisten] createCollection: local.replset.election with generated UUID: 5128d5ed-36d2-4a32-8a1d-e3f31b9ff6c3 and options: {}
+2023-03-14T10:29:02.913+0100 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.election
+2023-03-14T10:29:02.915+0100 I  REPL     [initandlisten] Did not find local initialized voted for document at startup.
+2023-03-14T10:29:02.915+0100 I  REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2023-03-14T10:29:02.915+0100 I  STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: 82c35f07-c483-4229-802c-6cf41bc98e27 and options: {}
+2023-03-14T10:29:03.036+0100 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.system.rollback.id
+2023-03-14T10:29:03.036+0100 I  REPL     [initandlisten] Initialized the rollback ID to 1
+2023-03-14T10:29:03.036+0100 I  REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2023-03-14T10:29:03.038+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-0] Refresh for database config from version {} to version { uuid: UUID("6a17739f-4268-497f-8bba-92c2302b4aa2"), lastMod: 0 } took 0 ms
+2023-03-14T10:29:03.039+0100 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-14T10:29:03.039+0100 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Cannot use non-local read concern until replica set is finished initializing.
+2023-03-14T10:29:03.039+0100 I  NETWORK  [listener] Listening on 127.0.0.1
+2023-03-14T10:29:03.039+0100 I  NETWORK  [listener] waiting for connections on port 27019
+2023-03-14T10:29:03.039+0100 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-14T10:29:32.556+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:30:02.557+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:30:32.558+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:31:02.560+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:31:32.560+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:32:02.560+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:32:32.560+0100 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-14T10:32:32.598+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:58446 #1 (1 connection now open)
+2023-03-14T10:32:32.610+0100 I  NETWORK  [conn1] end connection 127.0.0.1:58446 (0 connections now open)
+2023-03-14T10:32:32.636+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:58448 #2 (1 connection now open)
+2023-03-14T10:32:32.647+0100 I  NETWORK  [conn2] received client metadata from 127.0.0.1:58448 conn2: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:32:32.681+0100 I  CONNPOOL [Replication] Connecting to localhost:27018
+2023-03-14T10:32:33.716+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:58454 #5 (2 connections now open)
+2023-03-14T10:32:33.718+0100 I  NETWORK  [conn5] end connection 127.0.0.1:58454 (1 connection now open)
+2023-03-14T10:32:33.744+0100 I  STORAGE  [replexec-0] createCollection: local.system.replset with generated UUID: f34928d0-2b99-41ee-968a-fb29a884f1dd and options: {}
+2023-03-14T10:32:33.970+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:58456 #7 (2 connections now open)
+2023-03-14T10:32:33.971+0100 I  NETWORK  [conn7] received client metadata from 127.0.0.1:58456 conn7: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:32:33.973+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T10:32:33.984+0100 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.system.replset
+2023-03-14T10:32:33.986+0100 I  REPL     [replexec-0] New replica set config in use: { _id: "myRepl", version: 1, configsvr: true, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27020", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('64103f30098823e91edb78e7') } }
+2023-03-14T10:32:33.986+0100 I  REPL     [replexec-0] This node is localhost:27019 in the config
+2023-03-14T10:32:33.986+0100 I  REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2023-03-14T10:32:33.987+0100 I  REPL     [replexec-0] Starting replication storage threads
+2023-03-14T10:32:33.988+0100 I  REPL     [replexec-4] Member localhost:27018 is now in state SECONDARY
+2023-03-14T10:32:33.988+0100 I  REPL     [replexec-2] Member localhost:27020 is now in state STARTUP2
+2023-03-14T10:32:34.053+0100 I  STORAGE  [replexec-0] createCollection: local.temp_oplog_buffer with generated UUID: 09d20411-2cbf-49b0-bf86-d6da66159bed and options: { temp: true }
+2023-03-14T10:32:34.309+0100 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.temp_oplog_buffer
+2023-03-14T10:32:34.309+0100 I  INITSYNC [replication-0] Starting initial sync (attempt 1 of 10)
+2023-03-14T10:32:34.326+0100 I  STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (09d20411-2cbf-49b0-bf86-d6da66159bed).
+2023-03-14T10:32:34.404+0100 I  STORAGE  [replication-0] createCollection: local.temp_oplog_buffer with generated UUID: 6297ad06-950b-4e97-8575-2e70d2c89e4a and options: { temp: true }
+2023-03-14T10:32:34.675+0100 I  INDEX    [replication-0] index build: done building index _id_ on ns local.temp_oplog_buffer
+2023-03-14T10:32:34.676+0100 I  REPL     [replication-0] sync source candidate: localhost:27018
+2023-03-14T10:32:34.677+0100 I  INITSYNC [replication-0] Initial syncer oplog truncation finished in: 0ms
+2023-03-14T10:32:34.677+0100 I  REPL     [replication-0] ******
+2023-03-14T10:32:34.678+0100 I  REPL     [replication-0] creating replication oplog of size: 26459MB...
+2023-03-14T10:32:34.678+0100 I  STORAGE  [replication-0] createCollection: local.oplog.rs with generated UUID: 817fcb09-2ca2-4ce1-acbe-6eea0cf68f3a and options: { capped: true, size: 27745058201.0, autoIndexId: false }
+2023-03-14T10:32:34.816+0100 I  STORAGE  [replication-0] Starting OplogTruncaterThread local.oplog.rs
+2023-03-14T10:32:34.817+0100 I  STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2023-03-14T10:32:34.818+0100 I  STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2023-03-14T10:32:34.818+0100 I  STORAGE  [replication-0] WiredTiger record store oplog processing took 0ms
+2023-03-14T10:32:35.881+0100 I  REPL     [replication-0] ******
+2023-03-14T10:32:35.882+0100 I  REPL     [replication-0] dropReplicatedDatabases - dropping 1 databases
+2023-03-14T10:32:35.882+0100 I  REPL     [replication-0] dropReplicatedDatabases - dropped 1 databases
+2023-03-14T10:32:35.883+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T10:32:35.972+0100 I  INITSYNC [replication-1] CollectionCloner::start called, on ns:admin.system.version
+2023-03-14T10:32:35.992+0100 I  STORAGE  [repl-writer-worker-0] createCollection: admin.system.version with provided UUID: fd1a66e9-9851-49f5-821c-f90779f76ebe and options: { uuid: UUID("fd1a66e9-9851-49f5-821c-f90779f76ebe") }
+2023-03-14T10:32:36.384+0100 I  INDEX    [repl-writer-worker-0] index build: starting on admin.system.version properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" } using method: Foreground
+2023-03-14T10:32:36.384+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:36.400+0100 I  COMMAND  [repl-writer-worker-0] setting featureCompatibilityVersion to 4.2
+2023-03-14T10:32:36.400+0100 I  NETWORK  [repl-writer-worker-0] Skip closing connection for connection # 7
+2023-03-14T10:32:36.401+0100 I  NETWORK  [repl-writer-worker-0] Skip closing connection for connection # 2
+2023-03-14T10:32:36.401+0100 I  INITSYNC [replication-0] CollectionCloner ns:admin.system.version finished cloning with status: OK
+2023-03-14T10:32:36.404+0100 I  INDEX    [replication-0] index build: inserted 1 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:36.581+0100 I  INDEX    [replication-0] index build: done building index _id_ on ns admin.system.version
+2023-03-14T10:32:36.671+0100 I  INITSYNC [replication-0] Finished cloning data: OK. Beginning oplog replay.
+2023-03-14T10:32:36.673+0100 I  INITSYNC [replication-1] No need to apply operations. (currently at { : Timestamp(1678786353, 1) })
+2023-03-14T10:32:36.674+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "replset.election" }
+2023-03-14T10:32:36.675+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "temp_oplog_buffer" }
+2023-03-14T10:32:36.675+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "oplog.rs" }
+2023-03-14T10:32:36.675+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "system.rollback.id" }
+2023-03-14T10:32:36.675+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "replset.minvalid" }
+2023-03-14T10:32:36.676+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "startup_log" }
+2023-03-14T10:32:36.676+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "replset.oplogTruncateAfterPoint" }
+2023-03-14T10:32:36.676+0100 I  COMMAND  [replication-0] CMD: collMod: { collMod: "system.replset" }
+2023-03-14T10:32:36.676+0100 I  INITSYNC [replication-1] Finished fetching oplog during initial sync: CallbackCanceled: error in fetcher batch callback: oplog fetcher is shutting down. Last fetched optime: { ts: Timestamp(0, 0), t: -1 }
+2023-03-14T10:32:36.676+0100 I  CONNPOOL [RS] Ending connection to host localhost:27018 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2023-03-14T10:32:36.676+0100 I  INITSYNC [replication-1] Initial sync attempt finishing up.
+2023-03-14T10:32:36.677+0100 I  INITSYNC [replication-1] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1678786354309), totalInitialSyncElapsedMillis: 2368, initialSyncAttempts: [], approxTotalDataSize: 59, approxTotalBytesCopied: 59, remainingInitialSyncEstimatedMillis: 0, fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp(1678786353, 1), initialSyncOplogEnd: Timestamp(1678786353, 1), databases: { databasesToClone: 0, databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1678786355955), end: new Date(1678786356671), elapsedMillis: 716, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 1, fetchedBatches: 1, bytesToCopy: 59, approxBytesCopied: 59, start: new Date(1678786355972), end: new Date(1678786356671), elapsedMillis: 699, receivedBatches: 1 } } } }
+2023-03-14T10:32:36.677+0100 I  STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (6297ad06-950b-4e97-8575-2e70d2c89e4a).
+2023-03-14T10:32:36.865+0100 I  INITSYNC [replication-0] initial sync done; took 2s.
+2023-03-14T10:32:36.866+0100 I  REPL     [replication-0] transition to RECOVERING from STARTUP2
+2023-03-14T10:32:36.866+0100 I  REPL     [replication-0] Starting replication fetcher thread
+2023-03-14T10:32:36.866+0100 I  REPL     [replication-0] Starting replication applier thread
+2023-03-14T10:32:36.866+0100 I  REPL     [replication-0] Starting replication reporter thread
+2023-03-14T10:32:36.866+0100 I  REPL     [rsSync-0] Starting oplog application
+2023-03-14T10:32:36.866+0100 I  REPL     [rsBackgroundSync] could not find member to sync from
+2023-03-14T10:32:36.867+0100 I  REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+2023-03-14T10:32:36.868+0100 I  REPL     [rsSync-0] Resetting sync source to empty, which was :27017
+2023-03-14T10:32:36.868+0100 I  REPL     [replexec-0] Member localhost:27020 is now in state SECONDARY
+2023-03-14T10:32:44.920+0100 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 0, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp(1678786353, 1), t: -1 } }
+2023-03-14T10:32:44.920+0100 I  ELECTION [conn2] Sending vote response: { term: 0, voteGranted: true, reason: "" }
+2023-03-14T10:32:45.006+0100 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 1, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp(1678786353, 1), t: -1 } }
+2023-03-14T10:32:45.006+0100 I  ELECTION [conn2] Sending vote response: { term: 1, voteGranted: true, reason: "" }
+2023-03-14T10:32:45.407+0100 I  REPL     [replexec-1] Member localhost:27018 is now in state PRIMARY
+2023-03-14T10:32:45.878+0100 I  REPL     [rsBackgroundSync] sync source candidate: localhost:27018
+2023-03-14T10:32:50.050+0100 I  REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27018
+2023-03-14T10:32:50.052+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T10:32:50.071+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.transactions with provided UUID: 47b3fb26-a0c8-4c87-a87a-67476dec8ae2 and options: { uuid: UUID("47b3fb26-a0c8-4c87-a87a-67476dec8ae2") }
+2023-03-14T10:32:50.294+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.transactions
+2023-03-14T10:32:50.294+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786365, 2), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("47b3fb26-a0c8-4c87-a87a-67476dec8ae2"), wall: new Date(1678786365181), o: { create: "transactions", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.transactions" } } }, took 223ms
+2023-03-14T10:32:50.298+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.image_collection with provided UUID: 6445f0e8-7d80-401d-8e3e-86a04131ea2d and options: { uuid: UUID("6445f0e8-7d80-401d-8e3e-86a04131ea2d") }
+2023-03-14T10:32:50.560+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.image_collection
+2023-03-14T10:32:50.561+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786365, 3), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("6445f0e8-7d80-401d-8e3e-86a04131ea2d"), wall: new Date(1678786365293), o: { create: "image_collection", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.image_collection" } } }, took 264ms
+2023-03-14T10:32:50.567+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.chunks with provided UUID: b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 and options: { uuid: UUID("b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6") }
+2023-03-14T10:32:51.017+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.chunks
+2023-03-14T10:32:51.018+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786365, 5), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6"), wall: new Date(1678786365404), o: { create: "chunks", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.chunks" } } }, took 451ms
+2023-03-14T10:32:51.785+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.chunks properties: { v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1", ns: "config.chunks" } using method: Hybrid
+2023-03-14T10:32:51.785+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:51.786+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: a0e71b52-dd30-4b78-b6a5-f17d1612eb96: config.chunks (b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 ): indexes: 1
+2023-03-14T10:32:51.786+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786365, 7), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6"), wall: new Date(1678786365613), o: { createIndexes: "chunks", v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1" } }, took 761ms
+2023-03-14T10:32:51.786+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:51.791+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:51.911+0100 I  STORAGE  [replexec-1] Triggering the first stable checkpoint. Initial Data: Timestamp(1678786353, 1) PrevStable: Timestamp(0, 0) CurrStable: Timestamp(1678786365, 8)
+2023-03-14T10:32:51.926+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_min_1 on ns config.chunks
+2023-03-14T10:32:52.163+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: a0e71b52-dd30-4b78-b6a5-f17d1612eb96: config.chunks ( b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-14T10:32:53.050+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.chunks properties: { v: 2, unique: true, key: { ns: 1, shard: 1, min: 1 }, name: "ns_1_shard_1_min_1", ns: "config.chunks" } using method: Hybrid
+2023-03-14T10:32:53.050+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:53.050+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: 8d8d5c4f-f8d8-4f17-9b98-854a83a4403d: config.chunks (b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 ): indexes: 1
+2023-03-14T10:32:53.051+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786365, 9), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6"), wall: new Date(1678786365935), o: { createIndexes: "chunks", v: 2, unique: true, key: { ns: 1, shard: 1, min: 1 }, name: "ns_1_shard_1_min_1" } }, took 1260ms
+2023-03-14T10:32:53.051+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:53.051+0100 W  STORAGE  [IndexBuildsCoordinatorMongod-0] failed to create WiredTiger bulk cursor: Resource device
+2023-03-14T10:32:53.051+0100 W  STORAGE  [IndexBuildsCoordinatorMongod-0] falling back to non-bulk cursor for index table:index-28--6151780637778733752
+2023-03-14T10:32:53.051+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:53.052+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_shard_1_min_1 on ns config.chunks
+2023-03-14T10:32:53.467+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 8d8d5c4f-f8d8-4f17-9b98-854a83a4403d: config.chunks ( b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 ). Index specs built: 1. Indexes in catalog before build: 2. Indexes in catalog after build: 3
+2023-03-14T10:32:54.417+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.chunks properties: { v: 2, unique: true, key: { ns: 1, lastmod: 1 }, name: "ns_1_lastmod_1", ns: "config.chunks" } using method: Hybrid
+2023-03-14T10:32:54.417+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:54.417+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: 40abeda6-9d17-49df-92b6-0cb9b1e55c91: config.chunks (b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 ): indexes: 1
+2023-03-14T10:32:54.418+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786366, 2), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6"), wall: new Date(1678786366329), o: { createIndexes: "chunks", v: 2, unique: true, key: { ns: 1, lastmod: 1 }, name: "ns_1_lastmod_1" } }, took 1363ms
+2023-03-14T10:32:54.418+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:54.422+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.migrations with provided UUID: bfb368bc-88bc-461c-b869-4d8a2ab083da and options: { uuid: UUID("bfb368bc-88bc-461c-b869-4d8a2ab083da") }
+2023-03-14T10:32:54.433+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:54.759+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_lastmod_1 on ns config.chunks
+2023-03-14T10:32:54.874+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.migrations
+2023-03-14T10:32:54.874+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786366, 3), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("bfb368bc-88bc-461c-b869-4d8a2ab083da"), wall: new Date(1678786366614), o: { create: "migrations", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.migrations" } } }, took 453ms
+2023-03-14T10:32:55.044+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 40abeda6-9d17-49df-92b6-0cb9b1e55c91: config.chunks ( b2c8a6e0-9f7f-4ca4-bb1a-2a35c1f169c6 ). Index specs built: 1. Indexes in catalog before build: 3. Indexes in catalog after build: 4
+2023-03-14T10:32:55.415+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.migrations properties: { v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1", ns: "config.migrations" } using method: Hybrid
+2023-03-14T10:32:55.416+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:55.416+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: ed4ed71a-9f9b-4171-a0eb-9e10d56f7fbb: config.migrations (bfb368bc-88bc-461c-b869-4d8a2ab083da ): indexes: 1
+2023-03-14T10:32:55.416+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786367, 1), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("bfb368bc-88bc-461c-b869-4d8a2ab083da"), wall: new Date(1678786367034), o: { createIndexes: "migrations", v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1" } }, took 539ms
+2023-03-14T10:32:55.416+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:55.421+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.shards with provided UUID: 25d0c6fe-2dbb-42d8-b789-7b7a61fe0e07 and options: { uuid: UUID("25d0c6fe-2dbb-42d8-b789-7b7a61fe0e07") }
+2023-03-14T10:32:55.421+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:55.850+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_min_1 on ns config.migrations
+2023-03-14T10:32:56.052+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.shards
+2023-03-14T10:32:56.052+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786367, 2), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("25d0c6fe-2dbb-42d8-b789-7b7a61fe0e07"), wall: new Date(1678786367476), o: { create: "shards", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.shards" } } }, took 632ms
+2023-03-14T10:32:56.241+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: ed4ed71a-9f9b-4171-a0eb-9e10d56f7fbb: config.migrations ( bfb368bc-88bc-461c-b869-4d8a2ab083da ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-14T10:32:56.749+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.shards properties: { v: 2, unique: true, key: { host: 1 }, name: "host_1", ns: "config.shards" } using method: Hybrid
+2023-03-14T10:32:56.750+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:56.750+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: 41b1d29f-16d5-4f23-90a6-5b34b2c83bc2: config.shards (25d0c6fe-2dbb-42d8-b789-7b7a61fe0e07 ): indexes: 1
+2023-03-14T10:32:56.751+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786367, 4), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("25d0c6fe-2dbb-42d8-b789-7b7a61fe0e07"), wall: new Date(1678786367859), o: { createIndexes: "shards", v: 2, unique: true, key: { host: 1 }, name: "host_1" } }, took 696ms
+2023-03-14T10:32:56.751+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:56.755+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.locks with provided UUID: 53531bb5-d945-406e-b92c-c47d324cfaea and options: { uuid: UUID("53531bb5-d945-406e-b92c-c47d324cfaea") }
+2023-03-14T10:32:56.757+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:57.028+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index host_1 on ns config.shards
+2023-03-14T10:32:57.272+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.locks
+2023-03-14T10:32:57.273+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786367, 5), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("53531bb5-d945-406e-b92c-c47d324cfaea"), wall: new Date(1678786368082), o: { create: "locks", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.locks" } } }, took 518ms
+2023-03-14T10:32:57.427+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 41b1d29f-16d5-4f23-90a6-5b34b2c83bc2: config.shards ( 25d0c6fe-2dbb-42d8-b789-7b7a61fe0e07 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-14T10:32:57.704+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.locks properties: { v: 2, key: { ts: 1 }, name: "ts_1", ns: "config.locks" } using method: Hybrid
+2023-03-14T10:32:57.705+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:57.705+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: d8897442-bd62-433b-a62f-4ad6f947f577: config.locks (53531bb5-d945-406e-b92c-c47d324cfaea ): indexes: 1
+2023-03-14T10:32:57.706+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786368, 2), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("53531bb5-d945-406e-b92c-c47d324cfaea"), wall: new Date(1678786368315), o: { createIndexes: "locks", v: 2, key: { ts: 1 }, name: "ts_1" } }, took 425ms
+2023-03-14T10:32:57.706+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:57.713+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:57.871+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ts_1 on ns config.locks
+2023-03-14T10:32:57.927+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: d8897442-bd62-433b-a62f-4ad6f947f577: config.locks ( 53531bb5-d945-406e-b92c-c47d324cfaea ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-14T10:32:58.282+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.locks properties: { v: 2, key: { state: 1, process: 1 }, name: "state_1_process_1", ns: "config.locks" } using method: Hybrid
+2023-03-14T10:32:58.283+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:58.283+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: 1d25b9a3-cfe5-49bb-bba7-9131b48ea77a: config.locks (53531bb5-d945-406e-b92c-c47d324cfaea ): indexes: 1
+2023-03-14T10:32:58.283+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786368, 4), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("53531bb5-d945-406e-b92c-c47d324cfaea"), wall: new Date(1678786368548), o: { createIndexes: "locks", v: 2, key: { state: 1, process: 1 }, name: "state_1_process_1" } }, took 570ms
+2023-03-14T10:32:58.284+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:58.288+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.lockpings with provided UUID: d771fd14-cba4-42bc-b7bb-b69697ff3b0a and options: { uuid: UUID("d771fd14-cba4-42bc-b7bb-b69697ff3b0a") }
+2023-03-14T10:32:58.289+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:58.564+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index state_1_process_1 on ns config.locks
+2023-03-14T10:32:58.711+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.lockpings
+2023-03-14T10:32:58.712+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786368, 5), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("d771fd14-cba4-42bc-b7bb-b69697ff3b0a"), wall: new Date(1678786368759), o: { create: "lockpings", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.lockpings" } } }, took 424ms
+2023-03-14T10:32:58.761+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 1d25b9a3-cfe5-49bb-bba7-9131b48ea77a: config.locks ( 53531bb5-d945-406e-b92c-c47d324cfaea ). Index specs built: 1. Indexes in catalog before build: 2. Indexes in catalog after build: 3
+2023-03-14T10:32:59.137+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.lockpings properties: { v: 2, key: { ping: 1 }, name: "ping_1", ns: "config.lockpings" } using method: Hybrid
+2023-03-14T10:32:59.137+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:32:59.137+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: f731c2aa-0b16-47d9-8c9b-4e049cb1438b: config.lockpings (d771fd14-cba4-42bc-b7bb-b69697ff3b0a ): indexes: 1
+2023-03-14T10:32:59.137+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786368, 7), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("d771fd14-cba4-42bc-b7bb-b69697ff3b0a"), wall: new Date(1678786368918), o: { createIndexes: "lockpings", v: 2, key: { ping: 1 }, name: "ping_1" } }, took 419ms
+2023-03-14T10:32:59.137+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:32:59.139+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.tags with provided UUID: 15d7e9ec-db7f-4b52-b979-664915541c05 and options: { uuid: UUID("15d7e9ec-db7f-4b52-b979-664915541c05") }
+2023-03-14T10:32:59.140+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:32:59.379+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ping_1 on ns config.lockpings
+2023-03-14T10:32:59.577+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.tags
+2023-03-14T10:32:59.577+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786368, 8), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("15d7e9ec-db7f-4b52-b979-664915541c05"), wall: new Date(1678786369160), o: { create: "tags", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.tags" } } }, took 438ms
+2023-03-14T10:32:59.639+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: f731c2aa-0b16-47d9-8c9b-4e049cb1438b: config.lockpings ( d771fd14-cba4-42bc-b7bb-b69697ff3b0a ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-14T10:33:00.220+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.tags properties: { v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1", ns: "config.tags" } using method: Hybrid
+2023-03-14T10:33:00.220+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:33:00.221+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: 2c967848-d31e-4630-8ef5-f8b3bbf91670: config.tags (15d7e9ec-db7f-4b52-b979-664915541c05 ): indexes: 1
+2023-03-14T10:33:00.221+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786369, 2), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("15d7e9ec-db7f-4b52-b979-664915541c05"), wall: new Date(1678786369417), o: { createIndexes: "tags", v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1" } }, took 637ms
+2023-03-14T10:33:00.221+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:33:00.228+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:33:00.304+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_min_1 on ns config.tags
+2023-03-14T10:33:00.460+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 2c967848-d31e-4630-8ef5-f8b3bbf91670: config.tags ( 15d7e9ec-db7f-4b52-b979-664915541c05 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-14T10:33:00.793+0100 I  INDEX    [repl-writer-worker-0] index build: starting on config.tags properties: { v: 2, key: { ns: 1, tag: 1 }, name: "ns_1_tag_1", ns: "config.tags" } using method: Hybrid
+2023-03-14T10:33:00.794+0100 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-14T10:33:00.794+0100 I  STORAGE  [repl-writer-worker-0] Index build initialized: 8bc72218-c6a0-4b36-96c3-d5c9f0cfd398: config.tags (15d7e9ec-db7f-4b52-b979-664915541c05 ): indexes: 1
+2023-03-14T10:33:00.794+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786369, 4), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("15d7e9ec-db7f-4b52-b979-664915541c05"), wall: new Date(1678786369714), o: { createIndexes: "tags", v: 2, key: { ns: 1, tag: 1 }, name: "ns_1_tag_1" } }, took 565ms
+2023-03-14T10:33:00.795+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-14T10:33:00.800+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.version with provided UUID: 1d38f1af-3c2d-4493-8903-ff406d1a2731 and options: { uuid: UUID("1d38f1af-3c2d-4493-8903-ff406d1a2731") }
+2023-03-14T10:33:00.800+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-14T10:33:01.029+0100 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_tag_1 on ns config.tags
+2023-03-14T10:33:01.263+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.version
+2023-03-14T10:33:01.263+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786369, 5), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("1d38f1af-3c2d-4493-8903-ff406d1a2731"), wall: new Date(1678786369916), o: { create: "version", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.version" } } }, took 464ms
+2023-03-14T10:33:01.340+0100 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 8bc72218-c6a0-4b36-96c3-d5c9f0cfd398: config.tags ( 15d7e9ec-db7f-4b52-b979-664915541c05 ). Index specs built: 1. Indexes in catalog before build: 2. Indexes in catalog after build: 3
+2023-03-14T10:33:01.752+0100 I  STORAGE  [repl-writer-worker-0] createCollection: admin.system.keys with provided UUID: fc36d407-b760-41c2-93c6-353be760f85f and options: { uuid: UUID("fc36d407-b760-41c2-93c6-353be760f85f") }
+2023-03-14T10:33:02.071+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns admin.system.keys
+2023-03-14T10:33:02.072+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678786381, 1), t: 1, h: 0, v: 2, op: "c", ns: "admin.$cmd", ui: UUID("fc36d407-b760-41c2-93c6-353be760f85f"), wall: new Date(1678786381718), o: { create: "system.keys", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.keys" } } }, took 320ms
+2023-03-14T10:33:02.204+0100 I  REPL     [repl-writer-worker-0] applied op: CRUD { ts: Timestamp(1678786381, 2), t: 1, h: 0, v: 2, op: "i", ns: "admin.system.keys", ui: UUID("fc36d407-b760-41c2-93c6-353be760f85f"), wall: new Date(1678786381719), o: { _id: 7210332551825588231, purpose: "HMAC", key: BinData(0, DBD9D120623915A7A024F00DC4468DE31B5F6634), expiresAt: Timestamp(1686562369, 0) } }, took 128ms
+2023-03-14T10:33:02.204+0100 I  COMMAND  [monitoring-keys-for-HMAC] command admin.system.keys command: find { find: "system.keys", filter: { purpose: "HMAC", expiresAt: { $gt: Timestamp(0, 0) } }, sort: { expiresAt: 1 }, $readPreference: { mode: "nearest", tags: [] }, $db: "admin" } planSummary: COLLSCAN keysExamined:0 docsExamined:0 hasSortStage:1 cursorExhausted:1 numYields:2 nreturned:0 queryHash:6DC32749 planCacheKey:6DC32749 reslen:320 locks:{ ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 3 } }, Database: { acquireCount: { r: 3 }, acquireWaitCount: { r: 2 }, timeAcquiringMicros: { r: 288543 } }, Collection: { acquireCount: { r: 3 } }, Mutex: { acquireCount: { r: 2 } } } storage:{} protocol:op_msg 420ms
+2023-03-14T10:33:17.585+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:65129 #14 (3 connections now open)
+2023-03-14T10:33:17.594+0100 I  NETWORK  [conn14] received client metadata from 127.0.0.1:65129 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:33:37.753+0100 I  NETWORK  [conn14] end connection 127.0.0.1:65129 (2 connections now open)
+2023-03-14T10:34:03.038+0100 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-14T10:34:03.039+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-14T10:34:03.040+0100 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-14T10:34:03.040+0100 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-14T10:39:03.039+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-2] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2023-03-14T10:39:03.040+0100 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-14T10:39:03.040+0100 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-14T10:39:03.040+0100 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-14T10:39:10.478+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:52860 #15 (3 connections now open)
+2023-03-14T10:39:10.479+0100 I  NETWORK  [conn15] end connection 127.0.0.1:52860 (2 connections now open)
+2023-03-14T10:39:10.491+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:52865 #17 (3 connections now open)
+2023-03-14T10:39:10.493+0100 I  NETWORK  [conn17] end connection 127.0.0.1:52865 (2 connections now open)
+2023-03-14T10:39:10.498+0100 I  REPL     [replexec-6] New replica set config in use: { _id: "myRepl", version: 2, configsvr: true, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 2.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27020", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('64103f30098823e91edb78e7') } }
+2023-03-14T10:39:10.499+0100 I  REPL     [replexec-6] This node is localhost:27019 in the config
+2023-03-14T10:44:03.039+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-3] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-14T10:44:03.039+0100 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-14T10:44:03.039+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-3] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-14T10:44:03.039+0100 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-14T10:44:03.039+0100 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-14T10:49:03.040+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-4] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2023-03-14T10:49:03.040+0100 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-14T10:49:03.040+0100 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-14T10:49:03.041+0100 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-14T10:52:23.520+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53051 #19 (3 connections now open)
+2023-03-14T10:52:23.528+0100 I  NETWORK  [conn19] received client metadata from 127.0.0.1:53051 conn19: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:52:23.545+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53056 #20 (4 connections now open)
+2023-03-14T10:52:23.545+0100 I  NETWORK  [conn20] received client metadata from 127.0.0.1:53056 conn20: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:52:24.242+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.mongos with provided UUID: 7483451b-14a2-44a4-a819-6a4a34b8caff and options: { uuid: UUID("7483451b-14a2-44a4-a819-6a4a34b8caff") }
+2023-03-14T10:52:24.478+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.mongos
+2023-03-14T10:52:24.478+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678787544, 1), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("7483451b-14a2-44a4-a819-6a4a34b8caff"), wall: new Date(1678787544189), o: { create: "mongos", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.mongos" } } }, took 236ms
+2023-03-14T10:52:51.975+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53059 #21 (5 connections now open)
+2023-03-14T10:52:51.976+0100 I  NETWORK  [conn21] received client metadata from 127.0.0.1:53059 conn21: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:52:51.985+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53062 #22 (6 connections now open)
+2023-03-14T10:52:51.986+0100 I  NETWORK  [conn22] received client metadata from 127.0.0.1:53062 conn22: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:52:51.991+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53065 #23 (7 connections now open)
+2023-03-14T10:52:51.992+0100 I  NETWORK  [conn23] received client metadata from 127.0.0.1:53065 conn23: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:53:19.037+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53077 #24 (8 connections now open)
+2023-03-14T10:53:19.038+0100 I  NETWORK  [conn24] received client metadata from 127.0.0.1:53077 conn24: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:53:20.046+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53080 #25 (9 connections now open)
+2023-03-14T10:53:20.048+0100 I  NETWORK  [conn25] received client metadata from 127.0.0.1:53080 conn25: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:53:51.992+0100 I  NETWORK  [conn22] end connection 127.0.0.1:53062 (8 connections now open)
+2023-03-14T10:54:03.040+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-5] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-14T10:54:03.040+0100 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-14T10:54:03.040+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-5] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-14T10:54:03.040+0100 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-14T10:54:03.041+0100 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-14T10:55:03.531+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53103 #26 (9 connections now open)
+2023-03-14T10:55:03.532+0100 I  NETWORK  [conn26] received client metadata from 127.0.0.1:53103 conn26: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:55:03.536+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53106 #27 (10 connections now open)
+2023-03-14T10:55:03.537+0100 I  NETWORK  [conn27] received client metadata from 127.0.0.1:53106 conn27: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:55:03.538+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53109 #28 (11 connections now open)
+2023-03-14T10:55:03.539+0100 I  NETWORK  [conn28] received client metadata from 127.0.0.1:53109 conn28: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:55:04.411+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.changelog with provided UUID: db840547-4ed1-499a-83c1-cfc6d4cdbbdd and options: { uuid: UUID("db840547-4ed1-499a-83c1-cfc6d4cdbbdd"), capped: true, size: 209715200 }
+2023-03-14T10:55:04.779+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.changelog
+2023-03-14T10:55:04.779+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678787703, 4), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("db840547-4ed1-499a-83c1-cfc6d4cdbbdd"), wall: new Date(1678787704312), o: { create: "changelog", capped: true, size: 209715200, idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.changelog" } } }, took 370ms
+2023-03-14T10:55:20.392+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53119 #29 (12 connections now open)
+2023-03-14T10:55:20.392+0100 I  NETWORK  [conn29] received client metadata from 127.0.0.1:53119 conn29: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:55:20.400+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53123 #30 (13 connections now open)
+2023-03-14T10:55:20.401+0100 I  NETWORK  [conn30] received client metadata from 127.0.0.1:53123 conn30: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:55:20.403+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53124 #31 (14 connections now open)
+2023-03-14T10:55:20.403+0100 I  NETWORK  [conn31] received client metadata from 127.0.0.1:53124 conn31: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:55:36.090+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53131 #32 (15 connections now open)
+2023-03-14T10:55:36.093+0100 I  NETWORK  [conn32] received client metadata from 127.0.0.1:53131 conn32: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:56:03.542+0100 I  NETWORK  [conn27] end connection 127.0.0.1:53106 (14 connections now open)
+2023-03-14T10:56:06.088+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53140 #33 (15 connections now open)
+2023-03-14T10:56:06.089+0100 I  NETWORK  [conn33] received client metadata from 127.0.0.1:53140 conn33: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T10:56:20.411+0100 I  NETWORK  [conn30] end connection 127.0.0.1:53123 (14 connections now open)
+2023-03-14T10:58:47.882+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.collections with provided UUID: 2b3f3460-2627-4239-8a41-903186966dda and options: { uuid: UUID("2b3f3460-2627-4239-8a41-903186966dda") }
+2023-03-14T10:58:48.777+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.collections
+2023-03-14T10:58:48.778+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678787927, 3), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("2b3f3460-2627-4239-8a41-903186966dda"), wall: new Date(1678787927766), o: { create: "collections", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.collections" } } }, took 896ms
+2023-03-14T10:58:51.563+0100 I  STORAGE  [repl-writer-worker-0] createCollection: config.system.sessions with provided UUID: ee6b472f-1317-4bd4-b436-668bbf45da0b and options: { uuid: UUID("ee6b472f-1317-4bd4-b436-668bbf45da0b") }
+2023-03-14T10:58:52.093+0100 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.system.sessions
+2023-03-14T10:58:52.093+0100 I  REPL     [repl-writer-worker-0] applied op: command { ts: Timestamp(1678787930, 4), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("ee6b472f-1317-4bd4-b436-668bbf45da0b"), wall: new Date(1678787931503), o: { create: "system.sessions", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.system.sessions" } } }, took 530ms
+2023-03-14T10:58:58.046+0100 I  STORAGE  [repl-writer-worker-4] createCollection: config.actionlog with provided UUID: 1be44a09-0fbd-4a16-96a8-25669f03a7cb and options: { uuid: UUID("1be44a09-0fbd-4a16-96a8-25669f03a7cb"), capped: true, size: 20971520 }
+2023-03-14T10:58:58.569+0100 I  INDEX    [repl-writer-worker-4] index build: done building index _id_ on ns config.actionlog
+2023-03-14T10:58:58.569+0100 I  REPL     [repl-writer-worker-4] applied op: command { ts: Timestamp(1678787937, 4), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("1be44a09-0fbd-4a16-96a8-25669f03a7cb"), wall: new Date(1678787937948), o: { create: "actionlog", capped: true, size: 20971520, idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.actionlog" } } }, took 523ms
+2023-03-14T10:59:03.058+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-6] Refresh for collection config.system.sessions to version 3|1||641045573504a86837985c0f took 18 ms
+2023-03-14T10:59:03.059+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T10:59:03.059+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T10:59:03.060+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T11:04:03.052+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-7] Refresh for collection config.system.sessions from version 3|1||641045573504a86837985c0f to version 136|1||641045573504a86837985c0f took 11 ms
+2023-03-14T11:09:03.051+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-8] Refresh for collection config.system.sessions from version 136|1||641045573504a86837985c0f to version 275|1||641045573504a86837985c0f took 9 ms
+2023-03-14T11:14:03.046+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-9] Refresh for collection config.system.sessions from version 275|1||641045573504a86837985c0f to version 414|1||641045573504a86837985c0f took 4 ms
+2023-03-14T11:19:03.047+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T11:19:03.047+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T11:19:03.048+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T11:19:03.053+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-10] Refresh for collection config.system.sessions from version 414|1||641045573504a86837985c0f to version 556|1||641045573504a86837985c0f took 12 ms
+2023-03-14T11:19:03.054+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T11:19:03.054+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T11:19:03.055+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T11:24:03.057+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-11] Refresh for collection config.system.sessions from version 556|1||641045573504a86837985c0f to version 683|1||641045573504a86837985c0f took 15 ms
+2023-03-14T11:35:28.976+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T11:36:29.034+0100 I  CONNPOOL [RS] Ending idle connection to host localhost:27018 because the pool meets constraints; 2 connections to that host remain open
+2023-03-14T11:44:03.049+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T11:44:03.050+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T11:44:03.050+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T11:44:03.052+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T11:44:03.052+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T11:44:03.053+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T11:59:03.063+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T11:59:03.063+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T11:59:03.064+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T11:59:03.073+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T11:59:03.074+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T11:59:03.074+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T12:03:03.706+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T12:04:03.706+0100 I  CONNPOOL [RS] Ending idle connection to host localhost:27018 because the pool meets constraints; 2 connections to that host remain open
+2023-03-14T12:09:03.058+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T12:09:03.059+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T12:14:13.733+0100 I  STORAGE  [repl-writer-worker-6] createCollection: config.databases with provided UUID: 9f3723f7-8e29-4e38-b1f7-4e6c40bce2bc and options: { uuid: UUID("9f3723f7-8e29-4e38-b1f7-4e6c40bce2bc") }
+2023-03-14T12:14:14.081+0100 I  INDEX    [repl-writer-worker-6] index build: done building index _id_ on ns config.databases
+2023-03-14T12:14:14.081+0100 I  REPL     [repl-writer-worker-6] applied op: command { ts: Timestamp(1678792453, 2), t: 1, h: 0, v: 2, op: "c", ns: "config.$cmd", ui: UUID("9f3723f7-8e29-4e38-b1f7-4e6c40bce2bc"), wall: new Date(1678792453671), o: { create: "databases", idIndex: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.databases" } } }, took 349ms
+2023-03-14T12:16:14.726+0100 I  COMMAND  [conn33] command config.tags command: find { find: "tags", filter: { ns: "pays.collecpays" }, sort: { min: 1 }, readConcern: { level: "majority", afterOpTime: { ts: Timestamp(1678792573, 2), t: 1 } }, maxTimeMS: 30000, $readPreference: { mode: "nearest" }, $replData: 1, $clusterTime: { clusterTime: Timestamp(1678792573, 2), signature: { hash: BinData(0, 323F7845C56EB44800F048771AD619C342ABB2EF), keyId: 7210332551825588231 } }, $configServerState: { opTime: { ts: Timestamp(1678792573, 2), t: 1 } }, $db: "config" } planSummary: IXSCAN { ns: 1, min: 1 } keysExamined:0 docsExamined:0 fromMultiPlanner:1 cursorExhausted:1 numYields:1 nreturned:0 queryHash:EC5F1250 planCacheKey:56AAA329 reslen:547 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 2 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 150ms
+2023-03-14T12:24:03.059+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T12:24:03.060+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T12:32:37.715+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T12:33:37.721+0100 I  CONNPOOL [RS] Ending idle connection to host localhost:27018 because the pool meets constraints; 2 connections to that host remain open
+2023-03-14T12:34:03.060+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T12:34:03.060+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T12:34:03.061+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T12:34:03.062+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T12:44:03.059+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T12:44:03.060+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T12:44:03.061+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T12:44:03.062+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T12:44:03.063+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T12:44:03.063+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T12:45:52.731+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:53748 #56 (15 connections now open)
+2023-03-14T12:45:52.735+0100 I  NETWORK  [conn56] received client metadata from 127.0.0.1:53748 conn56: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T12:54:52.740+0100 I  NETWORK  [conn56] end connection 127.0.0.1:53748 (14 connections now open)
+2023-03-14T13:01:12.175+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:59005 #57 (15 connections now open)
+2023-03-14T13:01:12.176+0100 I  NETWORK  [conn57] received client metadata from 127.0.0.1:59005 conn57: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T13:13:12.187+0100 I  NETWORK  [conn57] end connection 127.0.0.1:59005 (14 connections now open)
+2023-03-14T13:17:19.879+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:50455 #58 (15 connections now open)
+2023-03-14T13:17:19.880+0100 I  NETWORK  [conn58] received client metadata from 127.0.0.1:50455 conn58: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T13:22:19.885+0100 I  NETWORK  [conn58] end connection 127.0.0.1:50455 (14 connections now open)
+2023-03-14T13:32:01.775+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T13:33:01.777+0100 I  CONNPOOL [RS] Ending idle connection to host localhost:27018 because the pool meets constraints; 2 connections to that host remain open
+2023-03-14T13:33:13.773+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:61222 #60 (15 connections now open)
+2023-03-14T13:33:13.774+0100 I  NETWORK  [conn60] received client metadata from 127.0.0.1:61222 conn60: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T13:38:13.778+0100 I  NETWORK  [conn60] end connection 127.0.0.1:61222 (14 connections now open)
+2023-03-14T13:39:03.064+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T13:39:03.064+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T13:39:03.064+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T13:39:03.065+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T13:39:03.066+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T13:39:03.066+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T14:12:02.753+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57961 #64 (15 connections now open)
+2023-03-14T14:12:02.754+0100 I  NETWORK  [conn64] received client metadata from 127.0.0.1:57961 conn64: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:17:02.763+0100 I  NETWORK  [conn64] end connection 127.0.0.1:57961 (14 connections now open)
+2023-03-14T14:19:03.067+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T14:19:03.067+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T14:19:03.067+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T14:19:03.069+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T14:19:03.069+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T14:19:03.070+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T14:29:03.068+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T14:29:03.069+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T14:29:03.069+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T14:29:03.071+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T14:29:03.071+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T14:29:03.072+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T14:39:05.087+0100 I  COMMAND  [replSetDistLockPinger] command config.lockpings command: findAndModify { findAndModify: "lockpings", query: { _id: "ConfigServer" }, update: { $set: { ping: new Date(1678801144075) } }, upsert: true, writeConcern: { w: "majority", wtimeout: 15000 }, $db: "config" } numYields:0 ok:0 errMsg:"Not primary while running findAndModify command on collection config.lockpings" errName:NotWritablePrimary errCode:10107 reslen:536 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 3 } protocol:op_msg 1011ms
+2023-03-14T14:39:40.036+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T14:40:40.037+0100 I  CONNPOOL [RS] Ending idle connection to host localhost:27018 because the pool meets constraints; 2 connections to that host remain open
+2023-03-14T14:58:44.757+0100 I  CONNPOOL [RS] Ending connection to host localhost:27018 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2023-03-14T14:58:44.773+0100 I  ELECTION [conn7] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 1, candidateIndex: 2, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678801305, 3), t: 1 } }
+2023-03-14T14:58:44.773+0100 I  ELECTION [conn7] Sending vote response: { term: 1, voteGranted: true, reason: "" }
+2023-03-14T14:58:44.779+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T14:58:44.780+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T14:58:44.780+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T14:58:44.787+0100 I  ELECTION [replexec-105] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2023-03-14T14:58:44.788+0100 I  ELECTION [replexec-105] conducting a dry run election to see if we could be elected. current term: 1
+2023-03-14T14:58:44.788+0100 I  REPL     [replexec-105] Scheduling remote command request for vote request: RemoteCommand 69971 -- target:localhost:27018 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 1, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678801305, 3), t: 1 } }
+2023-03-14T14:58:44.788+0100 I  REPL     [replexec-105] Scheduling remote command request for vote request: RemoteCommand 69972 -- target:localhost:27020 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 1, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678801305, 3), t: 1 } }
+2023-03-14T14:58:44.789+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T14:58:44.789+0100 I  ELECTION [replexec-107] VoteRequester(term 1 dry run) received a yes vote from localhost:27018; response message: { term: 1, voteGranted: true, reason: "", ok: 1.0, $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('7fffffff0000000000000001') }, lastCommittedOpTime: Timestamp(1678801305, 3), $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1678801305, 3) }
+2023-03-14T14:58:44.789+0100 I  ELECTION [replexec-109] dry election run succeeded, running for election in term 2
+2023-03-14T14:58:44.940+0100 I  NETWORK  [conn28] end connection 127.0.0.1:53109 (13 connections now open)
+2023-03-14T14:58:45.046+0100 I  NETWORK  [conn33] end connection 127.0.0.1:53140 (12 connections now open)
+2023-03-14T14:58:45.084+0100 I  NETWORK  [conn31] end connection 127.0.0.1:53124 (11 connections now open)
+2023-03-14T14:58:45.715+0100 I  NETWORK  [conn20] end connection 127.0.0.1:53056 (10 connections now open)
+2023-03-14T14:58:45.715+0100 I  NETWORK  [conn25] end connection 127.0.0.1:53080 (9 connections now open)
+2023-03-14T14:58:45.825+0100 I  NETWORK  [conn23] end connection 127.0.0.1:53065 (8 connections now open)
+2023-03-14T14:58:47.766+0100 I  REPL     [replication-41] Restarting oplog query due to error: NetworkInterfaceExceededTimeLimit: error in fetcher batch callback :: caused by :: Request 69964 timed out, deadline was 2023-03-14T14:41:56.075+0100, op was RemoteCommand 69964 -- target:[localhost:27018] db:local expDate:2023-03-14T14:41:56.075+0100 cmd:{ getMore: 4752258486731171032, collection: "oplog.rs", batchSize: 13981010, maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp(1678801305, 3), t: 1 } }. Last fetched optime: { ts: Timestamp(1678801305, 3), t: 1 }. Restarts remaining: 1
+2023-03-14T14:58:47.766+0100 I  REPL     [replication-41] Scheduled new oplog query Fetcher source: localhost:27018 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp(1678801305, 3) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } query metadata: { $replData: 1, $oplogQueryData: 1, $readPreference: { mode: "secondaryPreferred" } } active: 1 findNetworkTimeout: 7000ms getMoreNetworkTimeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 69974 -- target:localhost:27018 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp(1678801305, 3) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: {type: "NoRetryPolicy"}
+2023-03-14T14:58:48.173+0100 W  REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: Sync source must be ahead of me. My last fetched oplog optime: { ts: Timestamp(1678801305, 3), t: 1 }, latest oplog optime of sync source: { ts: Timestamp(1678801305, 3), t: 1 }
+2023-03-14T14:58:48.173+0100 I  REPL     [rsBackgroundSync] Clearing sync source localhost:27018 to choose a new one.
+2023-03-14T14:58:48.174+0100 I  REPL     [rsBackgroundSync] could not find member to sync from
+2023-03-14T14:58:48.262+0100 I  REPL     [replexec-111] Member localhost:27018 is now in state SECONDARY
+2023-03-14T14:58:48.457+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57639 #73 (9 connections now open)
+2023-03-14T14:58:48.470+0100 I  NETWORK  [conn73] received client metadata from 127.0.0.1:57639 conn73: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:48.470+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57640 #74 (10 connections now open)
+2023-03-14T14:58:48.489+0100 I  NETWORK  [conn74] received client metadata from 127.0.0.1:57640 conn74: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:48.708+0100 I  REPL     [replexec-109] Scheduling remote command request for vote request: RemoteCommand 69978 -- target:localhost:27018 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 2, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678801305, 3), t: 1 } }
+2023-03-14T14:58:48.708+0100 I  REPL     [replexec-109] Scheduling remote command request for vote request: RemoteCommand 69979 -- target:localhost:27020 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 2, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678801305, 3), t: 1 } }
+2023-03-14T14:58:48.725+0100 I  ELECTION [replexec-107] VoteRequester(term 2) received a no vote from localhost:27020 with reason "already voted for another candidate (localhost:27020) this term (2)"; response message: { term: 2, voteGranted: false, reason: "already voted for another candidate (localhost:27020) this term (2)", ok: 1.0, $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('000000000000000000000000') }, lastCommittedOpTime: Timestamp(1678801305, 3), $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1678801305, 3) }
+2023-03-14T14:58:48.897+0100 I  ELECTION [conn7] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 2, candidateIndex: 2, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678801305, 3), t: 1 } }
+2023-03-14T14:58:48.897+0100 I  ELECTION [conn7] Sending vote response: { term: 2, voteGranted: false, reason: "already voted for another candidate (localhost:27019) this term (2)" }
+2023-03-14T14:58:48.908+0100 I  ELECTION [replexec-111] VoteRequester(term 2) received a yes vote from localhost:27018; response message: { term: 2, voteGranted: true, reason: "", ok: 1.0, $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('7fffffff0000000000000001') }, lastCommittedOpTime: Timestamp(1678801305, 3), $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1678801305, 3) }
+2023-03-14T14:58:48.908+0100 I  ELECTION [replexec-111] election succeeded, assuming primary role in term 2
+2023-03-14T14:58:48.909+0100 I  REPL     [replexec-111] transition to PRIMARY from SECONDARY
+2023-03-14T14:58:48.909+0100 I  REPL     [replexec-111] Resetting sync source to empty, which was :27017
+2023-03-14T14:58:48.910+0100 I  CONNPOOL [Replication] Ending connection to host localhost:27018 due to bad connection status: CallbackCanceled: Callback was canceled; 0 connections to that host remain open
+2023-03-14T14:58:48.910+0100 I  CONNPOOL [Replication] Connecting to localhost:27018
+2023-03-14T14:58:49.009+0100 I  REPL     [replexec-111] Entering primary catch-up mode.
+2023-03-14T14:58:49.071+0100 I  REPL     [replexec-111] Caught up to the latest optime known via heartbeats after becoming primary. Target optime: { ts: Timestamp(1678801305, 3), t: 1 }. My Last Applied: { ts: Timestamp(1678801305, 3), t: 1 }
+2023-03-14T14:58:49.071+0100 I  REPL     [replexec-111] Exited primary catch-up mode.
+2023-03-14T14:58:49.071+0100 I  REPL     [replexec-111] Stopping replication producer
+2023-03-14T14:58:49.072+0100 I  REPL     [ReplBatcher] Oplog buffer has been drained in term 2
+2023-03-14T14:58:49.131+0100 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2023-03-14T14:58:49.131+0100 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2023-03-14T14:58:49.131+0100 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepUp", userOpsKilled: 0, userOpsRunning: 1 }
+2023-03-14T14:58:49.604+0100 I  SHARDING [Balancer] CSRS balancer is starting
+2023-03-14T14:58:49.606+0100 I  SHARDING [PeriodicShardedIndexConsistencyChecker] Checking consistency of sharded collection indexes across the cluster
+2023-03-14T14:58:49.666+0100 I  REPL     [rsSync-0] transition to primary complete; database writes are now permitted
+2023-03-14T14:58:49.763+0100 I  COMMAND  [Balancer] command config.settings command: find { find: "settings", filter: { _id: "balancer" }, ntoreturn: 1, singleBatch: true, $readPreference: { mode: "nearest", tags: [] }, $db: "config" } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:318 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 158437 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 2 } }, Mutex: { acquireCount: { r: 1 } } } protocol:op_msg 158ms
+2023-03-14T14:58:49.763+0100 I  COMMAND  [monitoring-keys-for-HMAC] command admin.system.keys command: find { find: "system.keys", filter: { purpose: "HMAC", expiresAt: { $gt: Timestamp(1678802329, 1) } }, sort: { expiresAt: 1 }, $readPreference: { mode: "nearest", tags: [] }, $db: "admin" } planSummary: COLLSCAN keysExamined:0 docsExamined:2 hasSortStage:1 cursorExhausted:1 numYields:0 nreturned:2 queryHash:6DC32749 planCacheKey:6DC32749 reslen:496 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 158669 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 159ms
+2023-03-14T14:58:49.763+0100 I  COMMAND  [PeriodicShardedIndexConsistencyChecker] command config.collections command: find { find: "collections", $readPreference: { mode: "nearest", tags: [] }, $db: "config" } planSummary: COLLSCAN keysExamined:0 docsExamined:2 cursorExhausted:1 numYields:0 nreturned:2 reslen:618 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 156451 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 156ms
+2023-03-14T14:58:49.764+0100 I  SHARDING [Balancer] CSRS balancer thread is recovering
+2023-03-14T14:58:49.764+0100 I  SHARDING [Balancer] CSRS balancer thread is recovered
+2023-03-14T14:58:49.763+0100 I  COMMAND  [conn74] command config.shards command: find { find: "shards", readConcern: { level: "majority", afterOpTime: { ts: Timestamp(1678801305, 3), t: 1 } }, maxTimeMS: 30000, $readPreference: { mode: "nearest" }, $replData: 1, $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 133F60D2D5E5ACB2CDA34D584DC8815A2945C9DF), keyId: 7210332551825588231 } }, $configServerState: { opTime: { ts: Timestamp(1678801305, 3), t: 1 } }, $db: "config" } planSummary: COLLSCAN keysExamined:0 docsExamined:3 cursorExhausted:1 numYields:0 nreturned:3 reslen:741 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 634987 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 635ms
+2023-03-14T14:58:49.811+0100 I  REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27018: InvalidSyncSource: Sync source was cleared. Was localhost:27018
+2023-03-14T14:58:49.857+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-51] Refresh for database pays from version {} to version { uuid: UUID("c4870d01-132e-438d-bacd-dc4630694334"), lastMod: 1 } took 83 ms
+2023-03-14T14:58:49.859+0100 I  SH_REFR  [ConfigServerCatalogCacheLoader-51] Refresh for collection pays.collecpays to version 8|1||6410577ecf979774f36c68f3 took 1 ms
+2023-03-14T14:58:49.860+0100 I  CONNPOOL [ShardRegistry] Connecting to localhost:27040
+2023-03-14T14:58:49.868+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T14:58:49.868+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T14:58:50.051+0100 I  SHARDING [PeriodicShardedIndexConsistencyChecker] Found 0 collections with inconsistent indexes
+2023-03-14T14:58:50.144+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57677 #82 (11 connections now open)
+2023-03-14T14:58:50.178+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57678 #83 (12 connections now open)
+2023-03-14T14:58:50.179+0100 I  NETWORK  [conn82] received client metadata from 127.0.0.1:57677 conn82: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.191+0100 I  NETWORK  [conn83] received client metadata from 127.0.0.1:57678 conn83: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.203+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57478 #84 (13 connections now open)
+2023-03-14T14:58:50.223+0100 I  NETWORK  [conn84] received client metadata from 127.0.0.1:57478 conn84: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.230+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57479 #85 (14 connections now open)
+2023-03-14T14:58:50.244+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57480 #86 (15 connections now open)
+2023-03-14T14:58:50.245+0100 I  NETWORK  [conn85] received client metadata from 127.0.0.1:57479 conn85: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.254+0100 I  NETWORK  [conn86] received client metadata from 127.0.0.1:57480 conn86: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.461+0100 I  COMMAND  [conn84] command local.oplog.rs command: find { find: "oplog.rs", limit: 1, sort: { $natural: 1 }, projection: { ts: 1, t: 1 }, $readPreference: { mode: "secondaryPreferred" }, $clusterTime: { clusterTime: Timestamp(1678802329, 1), signature: { hash: BinData(0, 38B81F7F7623842304F32C1F3FF1EC1913264638), keyId: 7210332551825588231 } }, $db: "local" } planSummary: COLLSCAN keysExamined:0 docsExamined:1 cursorExhausted:1 numYields:1 nreturned:1 queryHash:B04BA76E planCacheKey:B04BA76E reslen:337 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Mutex: { acquireCount: { r: 1 } }, oplog: { acquireCount: { r: 2 } } } storage:{} protocol:op_msg 233ms
+2023-03-14T14:58:50.461+0100 I  COMMAND  [conn86] command local.oplog.rs command: find { find: "oplog.rs", limit: 1, sort: { $natural: 1 }, projection: { ts: 1, t: 1 }, $readPreference: { mode: "secondaryPreferred" }, $clusterTime: { clusterTime: Timestamp(1678802330, 1), signature: { hash: BinData(0, 5EEA104CD80B733825CAE0250B92D9D3B9E5A0C7), keyId: 7210332551825588231 } }, $db: "local" } planSummary: COLLSCAN keysExamined:0 docsExamined:1 cursorExhausted:1 numYields:1 nreturned:1 queryHash:B04BA76E planCacheKey:B04BA76E reslen:337 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Mutex: { acquireCount: { r: 1 } }, oplog: { acquireCount: { r: 2 } } } storage:{} protocol:op_msg 202ms
+2023-03-14T14:58:50.469+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57483 #87 (16 connections now open)
+2023-03-14T14:58:50.487+0100 I  NETWORK  [conn87] received client metadata from 127.0.0.1:57483 conn87: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.494+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57484 #88 (17 connections now open)
+2023-03-14T14:58:50.495+0100 I  NETWORK  [conn88] received client metadata from 127.0.0.1:57484 conn88: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:50.662+0100 I  COMMAND  [conn73] command config.$cmd command: update { update: "mongos", bypassDocumentValidation: false, ordered: true, updates: [ { q: { _id: "DESKTOP-BMALQ1T:27000" }, u: { $set: { _id: "DESKTOP-BMALQ1T:27000", ping: new Date(1678801292780), up: 13692, waiting: true, mongoVersion: "4.2.24", advisoryHostFQDNs: [] } }, multi: false, upsert: true } ], writeConcern: { w: "majority", wtimeout: 60000 }, allowImplicitCollectionCreation: true, maxTimeMS: 30000, $replData: 1, $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 133F60D2D5E5ACB2CDA34D584DC8815A2945C9DF), keyId: 7210332551825588231 } }, $configServerState: { opTime: { ts: Timestamp(1678801305, 3), t: 1 } }, $db: "config" } numYields:0 reslen:587 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 624ms
+2023-03-14T14:58:50.662+0100 I  COMMAND  [conn83] command config.$cmd command: update { update: "mongos", bypassDocumentValidation: false, ordered: true, updates: [ { q: { _id: "DESKTOP-BMALQ1T:27000" }, u: { $set: { _id: "DESKTOP-BMALQ1T:27000", ping: new Date(1678801292780), up: 13720, waiting: true, mongoVersion: "4.2.24", advisoryHostFQDNs: [] } }, multi: false, upsert: true } ], writeConcern: { w: "majority", wtimeout: 60000 }, allowImplicitCollectionCreation: true, maxTimeMS: 30000, $replData: 1, $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 133F60D2D5E5ACB2CDA34D584DC8815A2945C9DF), keyId: 7210332551825588231 } }, $configServerState: { opTime: { ts: Timestamp(1678801305, 3), t: 1 } }, $db: "config" } numYields:0 reslen:587 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 464ms
+2023-03-14T14:58:50.663+0100 I  TXN      [TransactionCoordinator] Need to resume coordinating commit for 0 transactions
+2023-03-14T14:58:50.663+0100 I  COMMAND  [conn82] command config.$cmd command: update { update: "mongos", bypassDocumentValidation: false, ordered: true, updates: [ { q: { _id: "DESKTOP-BMALQ1T:27000" }, u: { $set: { _id: "DESKTOP-BMALQ1T:27000", ping: new Date(1678801292735), up: 13748, waiting: true, mongoVersion: "4.2.24", advisoryHostFQDNs: [] } }, multi: false, upsert: true } ], writeConcern: { w: "majority", wtimeout: 60000 }, allowImplicitCollectionCreation: true, maxTimeMS: 30000, $replData: 1, $clusterTime: { clusterTime: Timestamp(1678801305, 3), signature: { hash: BinData(0, 133F60D2D5E5ACB2CDA34D584DC8815A2945C9DF), keyId: 7210332551825588231 } }, $configServerState: { opTime: { ts: Timestamp(1678801305, 3), t: 1 } }, $db: "config" } numYields:0 reslen:587 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 479ms
+2023-03-14T14:58:50.663+0100 I  TXN      [TransactionCoordinator] Incoming coordinateCommit requests are now enabled
+2023-03-14T14:58:58.016+0100 I  COMMAND  [conn73] command config.lockpings command: findAndModify { findAndModify: "lockpings", query: { _id: "DESKTOP-BMALQ1T:27000:1678787598:2162017761039149485" }, update: { $set: { ping: new Date(1678802337884) } }, upsert: true, writeConcern: { w: "majority", wtimeout: 15000 }, maxTimeMS: 30000, $replData: 1, $clusterTime: { clusterTime: Timestamp(1678802330, 3), signature: { hash: BinData(0, 5EEA104CD80B733825CAE0250B92D9D3B9E5A0C7), keyId: 7210332551825588231 } }, $configServerState: { opTime: { ts: Timestamp(1678802330, 3), t: 2 } }, $db: "config" } planSummary: IDHACK keysExamined:1 docsExamined:1 nMatched:1 nModified:1 keysInserted:1 keysDeleted:1 numYields:0 reslen:640 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 131ms
+2023-03-14T14:58:59.165+0100 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 2, candidateIndex: 0, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678802337, 2), t: 2 } }
+2023-03-14T14:58:59.165+0100 I  ELECTION [conn2] Sending vote response: { term: 2, voteGranted: true, reason: "" }
+2023-03-14T14:58:59.194+0100 I  REPL     [conn2] stepping down from primary, because a new term has begun: 3
+2023-03-14T14:58:59.194+0100 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2023-03-14T14:58:59.195+0100 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2023-03-14T14:58:59.195+0100 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepDown", userOpsKilled: 0, userOpsRunning: 3 }
+2023-03-14T14:58:59.195+0100 I  REPL     [replexec-107] transition to SECONDARY from PRIMARY
+2023-03-14T14:58:59.196+0100 I  SHARDING [Balancer] CSRS balancer is now stopped
+2023-03-14T14:58:59.196+0100 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 3, candidateIndex: 0, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678802337, 2), t: 2 } }
+2023-03-14T14:58:59.196+0100 I  ELECTION [conn2] Sending vote response: { term: 3, voteGranted: true, reason: "" }
+2023-03-14T14:58:59.218+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57498 #89 (18 connections now open)
+2023-03-14T14:58:59.219+0100 I  NETWORK  [conn89] received client metadata from 127.0.0.1:57498 conn89: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:58:59.249+0100 I  NETWORK  [conn2] end connection 127.0.0.1:58448 (17 connections now open)
+2023-03-14T14:59:01.081+0100 I  REPL     [replexec-107] Member localhost:27018 is now in state PRIMARY
+2023-03-14T14:59:01.198+0100 I  REPL     [rsBackgroundSync] sync source candidate: localhost:27018
+2023-03-14T14:59:01.199+0100 I  REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27018
+2023-03-14T14:59:01.207+0100 I  CONNPOOL [RS] Connecting to localhost:27018
+2023-03-14T14:59:01.211+0100 I  NETWORK  [conn86] end connection 127.0.0.1:57480 (16 connections now open)
+2023-03-14T14:59:02.734+0100 W  SHARDING [replSetDistLockPinger] Lock pinger for proc: ConfigServer was inactive for 1047643ms ms
+2023-03-14T14:59:31.360+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57519 #91 (17 connections now open)
+2023-03-14T14:59:31.360+0100 I  NETWORK  [conn91] received client metadata from 127.0.0.1:57519 conn91: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:59:33.819+0100 I  NETWORK  [listener] connection accepted from 127.0.0.1:57520 #92 (18 connections now open)
+2023-03-14T14:59:33.820+0100 I  NETWORK  [conn92] received client metadata from 127.0.0.1:57520 conn92: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19044)" } }
+2023-03-14T14:59:47.790+0100 I  CONNPOOL [Replication] Ending idle connection to host localhost:27020 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T14:59:50.248+0100 I  NETWORK  [conn85] end connection 127.0.0.1:57479 (17 connections now open)
+2023-03-14T15:00:01.546+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T15:01:01.547+0100 I  CONNPOOL [Replication] Ending idle connection to host localhost:27020 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T15:02:37.631+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T15:03:50.176+0100 I  CONNPOOL [ShardRegistry] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T15:03:50.177+0100 I  CONNPOOL [ShardRegistry] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T15:03:50.180+0100 I  CONNPOOL [ShardRegistry] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T15:04:58.021+0100 I  NETWORK  [conn88] end connection 127.0.0.1:57484 (16 connections now open)
+2023-03-14T15:05:17.815+0100 I  CONNPOOL [Replication] Ending idle connection to host localhost:27020 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T15:05:41.868+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T15:06:00.708+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T15:06:00.710+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T15:06:00.711+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T15:06:00.712+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T15:06:00.712+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T15:06:00.713+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T15:08:16.084+0100 I  CONNPOOL [Replication] Ending idle connection to host localhost:27020 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T15:09:03.585+0100 I  QUERY    [clientcursormon] Cursor id 6317356711765054813 timed out, idle since 2023-03-14T14:59:01.210+0100
+2023-03-14T15:10:50.261+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T15:16:00.708+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27041 due to ShutdownInProgress: Pool for localhost:27041 has expired.
+2023-03-14T15:16:00.709+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27042 due to ShutdownInProgress: Pool for localhost:27042 has expired.
+2023-03-14T15:16:00.709+0100 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27040 due to ShutdownInProgress: Pool for localhost:27040 has expired.
+2023-03-14T15:16:00.710+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27040
+2023-03-14T15:16:00.710+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27041
+2023-03-14T15:16:00.711+0100 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27042
+2023-03-14T15:17:00.601+0100 I  CONNPOOL [Replication] Ending idle connection to host localhost:27020 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T15:18:24.684+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
+2023-03-14T15:19:58.704+0100 I  CONNPOOL [Replication] Ending idle connection to host localhost:27020 because the pool meets constraints; 1 connections to that host remain open
+2023-03-14T15:22:04.830+0100 I  CONNPOOL [Replication] Connecting to localhost:27020
